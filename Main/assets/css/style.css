@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+}
+
+/* fixed variable contents */
+:root {
+  --main: rgba(68, 88, 119, 1);
+  --gradient-gray: rgba(106, 107, 107, 0.698);
+  --gradient-black: rgba(14, 14, 14, 0.849);
+  --dark: rgba(28, 29, 33, 1);
+  --light: rgba(238, 238, 247, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--gradient-black);
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.205), rgba(255, 0, 0, 0.692));
+  line-height: 1.5;
+}
+/* the header navigation will stick on top while scrolling the page */
+.sticky{
+  position: sticky;
+  top: 1px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* section title rotate on mouse hover (desktop only)*/
+.spin:hover{
+  transform: rotate(-45deg);
+  border: none;
+  margin-top: 20px;
+}
+/* profile image scale on mous hover (desktop only)*/
+.profile:hover{
+  transform: scale(1.1);
+}
+p {
+  margin: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 1.3rem;
+}
+
+form{
+  padding: 50px;
+}
+header {
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 15px 55px rgb(0, 0, 0);
+  background-image: linear-gradient(to right, rgba(97, 44, 44, 0.876), rgb(255, 0, 0));
+
+}
+/* styling the question form */
+.form{
+  border: 2px solid black;
+  border-radius: 20%;
+  list-style: none;
+  padding: 30px;
+  text-align: left;
+}
+.message{
+  padding: 20px;
+}
+
+
+
+/* main logo styling */
+header h1 {
+  color: var(--light);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 4vw;
+  line-height: 1.5;
+}
+/* top meu navigation position */
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* top meu links styling */
+
+nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--light);
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  font-size: 1.4rem;
+}
+/* top meu links styling on mouse hover */
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: red;
+}
+
+nav a:last-child {
+  margin-right: 0;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+/* banner image styling */
+.banner {
+  background-image: url("../images/mern2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+/* banner image change on mouse hover (desktop only) */
+.banner:hover{
+  background-image: url("../images/bg2.png"); 
+  background-size: cover;
+}
+/* banner sutitle styling */
+.banner h2 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  color: var(--light);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
+.wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--main);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.section > div {
+  flex: 0 0 77%;
+}
+
+.section p {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile{
+  float: left;
+  width: 200px;
+  height: 200px;
+  align-items:flex-start;
+  margin-right: 20px;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+.item {
+  border: 5px solid var(--gradient-black);
+  background-color: var(--main);
+  color: var(--gradient-black);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* main portfolio link */
+.item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+    background-image: url("../images/logo_Grembiule.png");
+    background-size: cover;
+    background-color: rgb(71, 71, 71);
+}
+
+.item:hover {
+  background-color: rgba(87, 86, 86, 0.616);
+}
+
+.item div {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  padding: 8px 10px;
+  color: var(--light);
+}
+
+.item h3 {
+  font-size: 1.6rem;
+}
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--gradient-black);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 100%;
+  color: red;
+}
+
+/* portfolio project images */
+
+.tenuta {
+  background-image: url("../images/logo_web_tdp.png");
+  background-size:auto;
+}
+
+.horiseon {
+  background-image: url("../images/seo.jpg");
+  background-size: contain;
+}
+/* footer font position */
+form h2{
+  text-align: center;
+}
+
+
+/* responsive settings tablet and phones (less anmation) */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .section > h2,
+  .section > div {
+    flex: 0 0 100%;
+  }
+
+  .section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--main);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item,
+  .item:first-child {
+    flex-basis: 100%;
+  }
+
+  .item:first-child {
+    min-height: 150px;
+  }
+
+  .banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
