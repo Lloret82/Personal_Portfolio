@@ -14,9 +14,9 @@
   <header class="sticky">
     <h1 id="logo adb">ADB Portfolio</h1>
     <nav>
-      <a href="#about" id="about">About Me</a>
-      <a href="#work" id="work">Work</a>
-      <a href="#contact" id="contacts">Contact Me</a>
+      <a href="#about">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact Me</a>
       <!-- External link to pdf cv -->
       <a href="./assets/images/cv.pdf" target="_blank" id="curriculum">Resume</a>
     </nav>
@@ -33,7 +33,7 @@
     <!-- info about me -->
     <section class="section" id="about">
       <h2 class="spin">About Me</h2>
-      <div>
+      <article>
         <img src="./assets/images/me.JPG" alt="my_photo" class="profile">
         <h2>Hello, I'm Andrea </h2>
         <p>
@@ -46,32 +46,32 @@
           and then
           with Apple product (my addiction)
         </p>
-      </div>
+      </article>
     </section>
 
     <!-- portfolio -->
     <section class="section" id="work">
       <h2>Work</h2>
-      <div class="flex-container">
+      <article class="flex-container">
 
         <a href="https://gnammyitaly.org" class="item gnammy" target="_blank">
-          <div>
+          <article>
             <h3>Gnammy Italy</h3>
             <span>Wordpress - PHP, Javascript, HTML5, CSS3</span>
-          </div>
+          </article>
         </a>
 
         <a href="https://tenutadelpriore.it" class="item tenuta" target="_blank">
-          <div>
+          <article>
             <h3>Tenuta Del Priore</h3>
             <span>Wordpress - PHP, Javascript, HTML5, CSS3</span>
-          </div>
+          </article>
         </a>
         <a href="https://lloret82.github.io/Horiseon_Code_Refactor/" class="item horiseon">
-          <div>
+          <article>
             <h3>Horiseon</h3>
             <span>HTML/CSS</span>
-          </div>
+          </article>
         </a>
 
     </section>
@@ -79,13 +79,14 @@
     <!-- contact -->
     <section class="section contact" id="contact">
       <h2 class="spin">Contact Me</h2>
-      <div>
+      <article>
         <address>
           <a href="tel:+15555555555" id="phone">01612225520</a>
           <a href="mailto:andrea.fullstack@gmail.com" id="mail">Email</a>
           <a href="https://github.com/Lloret82" target="_blank" id="github">GitHub</a>
           <a href="https://www.linkedin.com/in/lloret82/" target="_blank" id="linkedin">Linkedin</a>
-          <form action="">
+          <!-- question form -->
+          <form action="mailto:andrea.fullstack@gmail.com">
             <h2>Ask me a question!</h2>
             <ul class="form">
               <li><label for="name">Name</label></li>
@@ -100,7 +101,7 @@
           </ul>
         </address>
 
-      </div>
+      </article>
     </section>
   </main>
 </body>

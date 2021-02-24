@@ -177,7 +177,7 @@ main {
   line-height: 1.1;
 }
 
-.section > div {
+.section > article {
   flex: 0 0 77%;
 }
 
@@ -232,7 +232,7 @@ main {
   background-color: rgba(87, 86, 86, 0.616);
 }
 
-.item div {
+.item article {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
   padding: 8px 10px;
   color: var(--light);
@@ -308,7 +308,7 @@ form h2{
   }
 
   .section > h2,
-  .section > div {
+  .section > article {
     flex: 0 0 100%;
   }
 
@@ -319,6 +319,9 @@ form h2{
     padding-bottom: 10px;
     text-align: left;
     font-size: 7vw;
+  }
+  form{
+    display: none;
   }
 }
 
@@ -340,6 +343,9 @@ form h2{
   .contact address {
     flex-direction: column;
     align-items: flex-start;
+  }
+  form{
+    display: none;
   }
 }
 
