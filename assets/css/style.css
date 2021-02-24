@@ -328,11 +328,11 @@ form h2{
 @media screen and (max-width: 768px) {
   .item,
   .item:first-child {
-    flex-basis: 100%;
+    flex-basis: 110%;
   }
 
   .item:first-child {
-    min-height: 150px;
+    min-height: 200px;
   }
 
   .banner {
