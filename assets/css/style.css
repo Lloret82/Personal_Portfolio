@@ -308,16 +308,16 @@ form h2 {
 
 @media screen and (max-width: 980px) {
   header {
-    padding: 0 0 2em 0;
+    padding: 0 0 10px 0;
     justify-content: center;
     text-align: center;
   }
 
   header h1 {
     width: 100%;
-    padding: 2em;
-    margin-bottom: 0.5em;
-    font-size: 2em;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
   }
 
   header nav {
