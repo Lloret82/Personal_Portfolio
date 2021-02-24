@@ -14,20 +14,17 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--gradient-black);
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0.205),
-    rgba(255, 0, 0, 0.692)
-  );
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.205), rgba(255, 0, 0, 0.692));
   line-height: 1.5;
 }
 /* the header navigation will stick on top while scrolling the page */
-.sticky {
+.sticky{
   position: sticky;
-  top: 0;
+  top: 1px;
 }
+
 
 h1,
 h2,
@@ -38,65 +35,56 @@ h6 {
   margin: 0;
 }
 /* section title rotate on mouse hover (desktop only)*/
-.spin:hover {
+.spin:hover{
   transform: rotate(-45deg);
   border: none;
   margin-top: 20px;
 }
-
-.profile {
-  object-fit: cover;
-}
-
-/* profile image scale on mouse hover (desktop only)*/
-.profile:hover {
+/* profile image scale on mous hover (desktop only)*/
+.profile:hover{
   transform: scale(1.1);
 }
 p {
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 1.3rem;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 1.3rem;
 }
 
+form{
+  padding: 50px;
+}
 header {
-  padding: 0.5em 1em 0.5em 0;
+  padding: 15px 6% 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   box-shadow: 0 15px 55px rgb(0, 0, 0);
-  background-image: linear-gradient(
-    to right,
-    rgba(97, 44, 44, 0.876),
-    rgb(255, 0, 0)
-  );
-}
+  background-image: linear-gradient(to right, rgba(97, 44, 44, 0.876), rgb(255, 0, 0));
 
-form {
-  padding: 50px;
 }
-
 /* styling the question form */
-.form {
-  border: 0.3em solid black;
+.form{
+  border: 2px solid black;
   border-radius: 20%;
   list-style: none;
-  padding: 2em;
+  padding: 30px;
   text-align: left;
 }
-.message {
-  padding: 2em;
+.message{
+  padding: 20px;
 }
+
+
 
 /* main logo styling */
 header h1 {
   color: var(--light);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-  padding: 0.1em 1% 0.1em 6%;
+  padding: 5px 1% 5px 6%;
   margin: 0;
-  font-size: 3em;
+  font-size: 4vw;
   line-height: 1.5;
 }
 /* top meu navigation position */
@@ -109,19 +97,15 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 0.5em 1em;
+  padding: 5px 10px;
   color: var(--light);
-  margin-right: 0.5em;
-  background-image: linear-gradient(
-    270deg,
-    var(--gradient-black) 0%,
-    var(--gradient-black) 100%
-  );
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 /* top meu links styling on mouse hover */
 
@@ -130,9 +114,13 @@ nav a:hover {
   color: red;
 }
 
+nav a:last-child {
+  margin-right: 0;
+}
+
 main {
-  margin-top: 3em;
-  margin-bottom: 7em;
+  margin-top: 20px;
+  margin-bottom: 45px;
 }
 /* banner image styling */
 .banner {
@@ -140,7 +128,7 @@ main {
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  height: 17em;
+  min-height: 30vh;
   color: var(--light);
   padding: 2% 6%;
   display: flex;
@@ -149,10 +137,9 @@ main {
   text-align: right;
 }
 /* banner image change on mouse hover (desktop only) */
-.banner:hover {
-  background-image: url("../images/bg2.png");
+.banner:hover{
+  background-image: url("../images/bg2.png"); 
   background-size: cover;
-  transition: 0.65s ease-in-out;
 }
 /* banner sutitle styling */
 .banner h2 {
@@ -204,11 +191,11 @@ main {
   justify-content: center;
 }
 
-.profile {
+.profile{
   float: left;
   width: 200px;
   height: 200px;
-  align-items: flex-start;
+  align-items:flex-start;
   margin-right: 20px;
   border-radius: 50%;
   shape-outside: circle();
@@ -223,37 +210,36 @@ main {
   flex-basis: calc(50% - 1em);
   display: flex;
   align-items: flex-end;
-  padding: 0 0 4em 0;
+  padding: 0 0 20px 0;
   margin: 0.5em;
   text-decoration: none;
   background-blend-mode: soft-light;
   background-size: 150%;
-  transition: 0.65s ease-in-out;
+  transition: all 0.5s;
   font-size: 0.9rem;
 }
 
 /* main portfolio link */
-.first {
-  min-height: 30em;
-  flex-basis: 100%;
-  background-image: url("../images/logo_Grembiule.png");
-  background-size: cover;
-  background-color: rgb(71, 71, 71);
+.item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+    background-image: url("../images/logo_Grembiule.png");
+    background-size: cover;
+    background-color: rgb(71, 71, 71);
 }
 
 .item:hover {
   background-color: rgba(87, 86, 86, 0.616);
-  transition: 0.65s ease-in-out;
 }
 
 .item article {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-  padding: 0.5em 1em;
+  padding: 8px 10px;
   color: var(--light);
 }
 
 .item h3 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .contact address {
@@ -266,15 +252,11 @@ main {
 
 .contact address a {
   color: var(--gradient-black);
-  padding: 0.5em;
+  padding: 5px;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-style: normal;
-  background-image: linear-gradient(
-    270deg,
-    var(--gradient-black) 0%,
-    var(--gradient-black) 100%
-  );
+  background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -292,7 +274,7 @@ main {
 
 .tenuta {
   background-image: url("../images/logo_web_tdp.png");
-  background-size: auto;
+  background-size:auto;
 }
 
 .horiseon {
@@ -300,9 +282,10 @@ main {
   background-size: contain;
 }
 /* footer font position */
-form h2 {
+form h2{
   text-align: center;
 }
+
 
 /* responsive settings tablet and phones (less anmation) */
 
@@ -337,18 +320,18 @@ form h2 {
     text-align: left;
     font-size: 7vw;
   }
-  form {
+  form{
     display: none;
   }
 }
 
 @media screen and (max-width: 768px) {
   .item,
-  .first {
+  .item:first-child {
     flex-basis: 100%;
   }
 
-  .first {
+  .item:first-child {
     min-height: 150px;
   }
 
@@ -361,7 +344,8 @@ form h2 {
     flex-direction: column;
     align-items: flex-start;
   }
-  form {
+  form{
     display: none;
   }
 }
+
