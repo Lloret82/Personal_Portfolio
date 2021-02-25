@@ -22,7 +22,7 @@ body {
 /* the header navigation will stick on top while scrolling the page */
 .sticky{
   position: sticky;
-  top: 1px;
+  top: 0.1em;
 }
 
 
@@ -38,7 +38,7 @@ h6 {
 .spin:hover{
   transform: rotate(-45deg);
   border: none;
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 /* profile image scale on mous hover (desktop only)*/
 .profile:hover{
@@ -47,33 +47,33 @@ h6 {
 p {
   margin: 0;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 1.3rem;
+font-size: 1.3em;
 }
 
 form{
-  padding: 50px;
+  padding: 3em;
 }
 header {
-  padding: 15px 6% 15px 0;
+  padding: 0.93em 6% 0.93em 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  box-shadow: 0 15px 55px rgb(0, 0, 0);
+  box-shadow: 0 0.93em 3em rgb(0, 0, 0);
   background-image: linear-gradient(to right, rgba(97, 44, 44, 0.876), rgb(255, 0, 0));
 
 }
 /* styling the question form */
 .form{
-  border: 2px solid black;
+  border: 0.37em solid black;
   border-radius: 20%;
   list-style: none;
-  padding: 30px;
+  padding: 1.7em;
   text-align: left;
 }
 .message{
-  padding: 20px;
+  padding: 1.25em;
 }
 
 
@@ -82,9 +82,9 @@ header {
 header h1 {
   color: var(--light);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-  padding: 5px 1% 5px 6%;
+  padding: 0.20em 1% 0.20em 6%;
   margin: 0;
-  font-size: 4vw;
+  font-size: 3em;
   line-height: 1.5;
 }
 /* top meu navigation position */
@@ -97,15 +97,15 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 0.37em 0.40em;
   color: var(--light);
-  margin-right: 10px;
+  margin-right: 0.62em;
   background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.25s ease-in;
-  font-size: 1.4rem;
+  font-size: 1.4em;
 }
 /* top meu links styling on mouse hover */
 
@@ -119,8 +119,8 @@ nav a:last-child {
 }
 
 main {
-  margin-top: 20px;
-  margin-bottom: 45px;
+  margin-top: 1.25em;
+  margin-bottom: 2.7em;
 }
 /* banner image styling */
 .banner {
@@ -128,26 +128,29 @@ main {
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
-  min-height: 30vh;
+  min-height: 16em;
   color: var(--light);
   padding: 2% 6%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   text-align: right;
+  transition: all 0.3s ease-in-out;
 }
 /* banner image change on mouse hover (desktop only) */
 .banner:hover{
   background-image: url("../images/bg2.png"); 
   background-size: cover;
+  transition: all 0.3s ease-in-out;
 }
+
 /* banner sutitle styling */
 .banner h2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-  color: var(--light);
+  color: rgba(255, 254, 254, 0.753);
   margin: 0;
-  padding: 5px 10px;
-  font-size: 2.3rem;
+  padding: 0.37em 0.62em;
+  font-size: 2.3em;
   line-height: 1.2;
   display: inline;
 }
@@ -159,8 +162,8 @@ main {
 }
 
 .section {
-  margin: 25px 0;
-  padding: 10px 0;
+  margin: 1.5em 0;
+  padding: 0.62em 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -171,9 +174,9 @@ main {
 .section > h2 {
   flex: 0 0 20%;
   text-align: right;
-  padding-right: 15px;
-  border-right: 4px solid var(--main);
-  font-size: 4vw;
+  padding-right: 0.93em;
+  border-right: 0.15em solid black;
+  font-size: 3em;
   line-height: 1.1;
 }
 
@@ -182,7 +185,7 @@ main {
 }
 
 .section p {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 .flex-container {
@@ -193,24 +196,25 @@ main {
 
 .profile{
   float: left;
-  width: 200px;
-  height: 200px;
+  width: 12em;
+  height: 12em;
   align-items:flex-start;
-  margin-right: 20px;
+  margin-right: 1.25em;
   border-radius: 50%;
   shape-outside: circle();
+  object-fit: cover;
 }
 
 .item {
-  border: 5px solid var(--gradient-black);
+  border: 3px solid var(--gradient-black);
   background-color: var(--main);
-  color: var(--gradient-black);
-  min-height: 150px;
-  max-height: 150px;
+  color: red;
+  min-height: 13em;
+  max-height: 13em;
   flex-basis: calc(50% - 1em);
   display: flex;
   align-items: flex-end;
-  padding: 0 0 20px 0;
+  padding: 0 0 1.25em 0;
   margin: 0.5em;
   text-decoration: none;
   background-blend-mode: soft-light;
@@ -220,8 +224,8 @@ main {
 }
 
 /* main portfolio link */
-.item:first-child {
-    min-height: 400px;
+.first {
+    min-height: 30em;
     flex-basis: 100%;
     background-image: url("../images/logo_Grembiule.png");
     background-size: cover;
@@ -234,7 +238,7 @@ main {
 
 .item article {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-  padding: 8px 10px;
+  padding: 0.5em 0.62em;
   color: var(--light);
 }
 
@@ -252,7 +256,7 @@ main {
 
 .contact address a {
   color: var(--gradient-black);
-  padding: 5px;
+  padding: 0.3em;
   text-decoration: none;
   font-size: 1.3rem;
   font-style: normal;
@@ -291,15 +295,15 @@ form h2{
 
 @media screen and (max-width: 980px) {
   header {
-    padding: 0 0 10px 0;
+    padding: 0 0 0.62em 0;
     justify-content: center;
     text-align: center;
   }
 
   header h1 {
     width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 0.3em;
+    margin-bottom: 0.62em;
     font-size: 10vw;
   }
 
@@ -314,9 +318,9 @@ form h2{
 
   .section > h2 {
     border-right: none;
-    border-bottom: 4px solid var(--main);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
+    border-bottom: 0.2em solid var(--main);
+    margin-bottom: 1.25em;
+    padding-bottom: 0.62em;
     text-align: left;
     font-size: 7vw;
   }
@@ -331,8 +335,8 @@ form h2{
     flex-basis: 110%;
   }
 
-  .item:first-child {
-    min-height: 200px;
+  .first {
+    min-height: 20em;
   }
 
   .banner {
