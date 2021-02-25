@@ -12,7 +12,7 @@
 
 ## Description
 
-#### _Hi, I'm Andrea
+#### Hi, I'm Andrea
 I am a graduate student in Full Stack Developer Bootcamp at University of Manchester. Previously, I worked as SEO Manager, Social Media Marketing and PPC executive. Other previous roles in technlogy improved my skills in Wordpress, e-commerce (magento, woocommerce) and Amazon. I bought my first computer in the far 1991 starting with an IBM 186 and then with Apple product (my addiction)
 
 ## What has been done
@@ -26,12 +26,13 @@ I am a graduate student in Full Stack Developer Bootcamp at University of Manche
 
 * [Code Repository](https://github.com/Lloret82/Personal_Portfolio)
 * [Live website](https://lloret82.github.io/Personal_Portfolio/)
-* ![Live page Picture](/assets/Screenshots/Screenshot_1.png)
+
 
 
 ## Screenshots
 
-![Code](/assets/Screenshots/Screenshot_3.png)
+* ![Code](/assets/Screenshots/Screenshot_3.png)
+* ![Live page Picture](/assets/Screenshots/Screenshot_1.png)
 
 
 ## Installation
