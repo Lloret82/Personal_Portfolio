@@ -31,8 +31,8 @@ I am a graduate student in Full Stack Developer Bootcamp at University of Manche
 
 ## Screenshots
 
-* ![Code](/assets/Screenshots/Screenshot_3.png)
-* ![Live page Picture](/assets/Screenshots/Screenshot_1.png)
+ ![Code](/assets/Screenshots/Screenshot_3.png)
+ ![Live page Picture](/assets/Screenshots/Screenshot_1.png)
 
 
 ## Installation
@@ -41,7 +41,7 @@ I am a graduate student in Full Stack Developer Bootcamp at University of Manche
 
 ## Usage
 
-#### _The page can be viewed in both desktop and mobile
+#### _The page can be viewed in both desktop and mobile version_
 
 
 
