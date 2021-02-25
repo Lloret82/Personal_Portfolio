@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-/* fixed variable contents */
+/* fixed variable colors */
 :root {
   --main: rgba(68, 88, 119, 1);
   --gradient-gray: rgba(106, 107, 107, 0.698);
@@ -14,17 +14,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--gradient-black);
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.205), rgba(255, 0, 0, 0.692));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.205),
+    rgba(255, 0, 0, 0.692)
+  );
   line-height: 1.5;
 }
 /* the header navigation will stick on top while scrolling the page */
-.sticky{
+.sticky {
   position: sticky;
   top: 0.1em;
 }
-
 
 h1,
 h2,
@@ -34,25 +37,6 @@ h5,
 h6 {
   margin: 0;
 }
-/* section title rotate on mouse hover (desktop only)*/
-.spin:hover{
-  transform: rotate(-45deg);
-  border: none;
-  margin-top: 1.25em;
-}
-/* profile image scale on mous hover (desktop only)*/
-.profile:hover{
-  transform: scale(1.1);
-}
-p {
-  margin: 0;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 1.3em;
-}
-
-form{
-  padding: 3em;
-}
 header {
   padding: 0.93em 6% 0.93em 0;
   display: flex;
@@ -61,28 +45,18 @@ header {
   flex-wrap: wrap;
   align-items: center;
   box-shadow: 0 0.93em 3em rgb(0, 0, 0);
-  background-image: linear-gradient(to right, rgba(97, 44, 44, 0.876), rgb(255, 0, 0));
-
+  background-image: linear-gradient(
+    to right,
+    rgba(97, 44, 44, 0.876),
+    rgb(255, 0, 0)
+  );
 }
-/* styling the question form */
-.form{
-  border: 0.37em solid black;
-  border-radius: 20%;
-  list-style: none;
-  padding: 1.7em;
-  text-align: left;
-}
-.message{
-  padding: 1.25em;
-}
-
-
 
 /* main logo styling */
 header h1 {
   color: var(--light);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-  padding: 0.20em 1% 0.20em 6%;
+  padding: 0.2em 1% 0.2em 6%;
   margin: 0;
   font-size: 3em;
   line-height: 1.5;
@@ -97,10 +71,14 @@ nav {
 
 nav a {
   text-decoration: none;
-  padding: 0.37em 0.40em;
+  padding: 0.37em 0.4em;
   color: var(--light);
   margin-right: 0.62em;
-  background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
+  background-image: linear-gradient(
+    270deg,
+    var(--gradient-black) 0%,
+    var(--gradient-black) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -122,6 +100,18 @@ main {
   margin-top: 1.25em;
   margin-bottom: 2.7em;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* banner image styling */
 .banner {
   background-image: url("../images/mern2.jpg");
@@ -138,27 +128,38 @@ main {
   transition: all 0.3s ease-in-out;
 }
 /* banner image change on mouse hover (desktop only) */
-.banner:hover{
-  background-image: url("../images/bg2.png"); 
+.banner:hover {
+  background-image: url("../images/bg2.png");
   background-size: cover;
   transition: all 0.3s ease-in-out;
 }
 
 /* banner sutitle styling */
 .banner h2 {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.472), rgb(0, 0, 0));
   color: rgba(255, 254, 254, 0.753);
   margin: 0;
   padding: 0.37em 0.62em;
-  font-size: 2.3em;
+  font-size: 1.5em;
   line-height: 1.2;
   display: inline;
 }
 
-.wrapper {
-  max-width: 88%;
-  margin-left: auto;
-  margin-right: auto;
+/* section title rotate on mouse hover (desktop only)*/
+.spin:hover {
+  transform: rotate(-45deg);
+  border: none;
+  margin-top: 1.25em;
+}
+/* profile image scale on mous hover (desktop only)*/
+.profile:hover {
+  transform: scale(1.1);
+}
+p {
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.3em;
 }
 
 .section {
@@ -188,17 +189,11 @@ main {
   margin-bottom: 1.25em;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.profile{
+.profile {
   float: left;
   width: 12em;
   height: 12em;
-  align-items:flex-start;
+  align-items: flex-start;
   margin-right: 1.25em;
   border-radius: 50%;
   shape-outside: circle();
@@ -225,11 +220,11 @@ main {
 
 /* main portfolio link */
 .first {
-    min-height: 30em;
-    flex-basis: 100%;
-    background-image: url("../images/logo_Grembiule.png");
-    background-size: cover;
-    background-color: rgb(71, 71, 71);
+  min-height: 30em;
+  flex-basis: 100%;
+  background-image: url("../images/logo_Grembiule.png");
+  background-size: cover;
+  background-color: rgb(71, 71, 71);
 }
 
 .item:hover {
@@ -237,13 +232,28 @@ main {
 }
 
 .item article {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.39), rgb(0, 0, 0));
   padding: 0.5em 0.62em;
   color: var(--light);
 }
 
 .item h3 {
   font-size: 1.6rem;
+}
+/* portfolio project images */
+
+.tenuta {
+  background-image: url("../images/logo_web_tdp.png");
+  background-size: auto;
+}
+
+.horiseon {
+  background-image: url("../images/seo.jpg");
+  background-size: contain;
+}
+/* footer font position */
+form h2 {
+  text-align: center;
 }
 
 .contact address {
@@ -260,7 +270,11 @@ main {
   text-decoration: none;
   font-size: 1.3rem;
   font-style: normal;
-  background-image: linear-gradient(270deg, var(--gradient-black) 0%, var(--gradient-black) 100%);
+  background-image: linear-gradient(
+    270deg,
+    var(--gradient-black) 0%,
+    var(--gradient-black) 100%
+  );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
@@ -273,23 +287,20 @@ main {
   background-size: 100% 100%;
   color: red;
 }
-
-/* portfolio project images */
-
-.tenuta {
-  background-image: url("../images/logo_web_tdp.png");
-  background-size:auto;
+form {
+  padding: 3em;
 }
-
-.horiseon {
-  background-image: url("../images/seo.jpg");
-  background-size: contain;
+/* styling the question form */
+.form {
+  border: 0.37em solid black;
+  border-radius: 20%;
+  list-style: none;
+  padding: 1.7em;
+  text-align: left;
 }
-/* footer font position */
-form h2{
-  text-align: center;
+.message {
+  padding: 1.25em;
 }
-
 
 /* responsive settings tablet and phones (less anmation) */
 
@@ -318,13 +329,13 @@ form h2{
 
   .section > h2 {
     border-right: none;
-    border-bottom: 0.2em solid var(--main);
+    border-bottom: 0.2em solid black;
     margin-bottom: 1.25em;
     padding-bottom: 0.62em;
     text-align: left;
     font-size: 7vw;
   }
-  form{
+  form {
     display: none;
   }
 }
@@ -349,8 +360,7 @@ form h2{
     flex-direction: column;
     align-items: flex-start;
   }
-  form{
+  form {
     display: none;
   }
 }
-
