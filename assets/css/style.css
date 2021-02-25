@@ -333,7 +333,7 @@ form {
     margin-bottom: 1.25em;
     padding-bottom: 0.62em;
     text-align: left;
-    font-size: 7vw;
+    font-size: 5vw;
   }
   form {
     display: none;
@@ -343,7 +343,7 @@ form {
 @media screen and (max-width: 768px) {
   .item,
   .first {
-    flex-basis: 110%;
+    flex-basis: 100%;
   }
 
   .first {
