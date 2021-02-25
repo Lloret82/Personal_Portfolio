@@ -331,12 +331,13 @@ form h2{
 
 @media screen and (max-width: 768px) {
   .item,
-  .item:first-child {
+  .first {
     flex-basis: 110%;
   }
 
   .first {
     min-height: 20em;
+    background-size: cover;
   }
 
   .banner {
