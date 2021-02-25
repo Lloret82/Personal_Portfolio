@@ -23,11 +23,6 @@ body {
   );
   line-height: 1.5;
 }
-/* the header navigation will stick on top while scrolling the page */
-.sticky {
-  position: sticky;
-  top: 0.1em;
-}
 
 h1,
 h2,
@@ -95,7 +90,11 @@ nav a:hover {
 nav a:last-child {
   margin-right: 0;
 }
-
+/* the header navigation will stick on top while scrolling the page */
+.sticky {
+  position: sticky;
+  top: 0.1em;
+}
 main {
   margin-top: 1.25em;
   margin-bottom: 2.7em;
@@ -136,7 +135,11 @@ main {
 
 /* banner sutitle styling */
 .banner h2 {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.472), rgb(0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.472),
+    rgb(0, 0, 0)
+  );
   color: rgba(255, 254, 254, 0.753);
   margin: 0;
   /* padding: 0.37em 0.62em; */
@@ -189,6 +192,33 @@ p {
   margin-bottom: 1.25em;
 }
 
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  border-right: 4px solid black;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
 .profile {
   float: left;
   width: 12em;
@@ -232,7 +262,11 @@ p {
 }
 
 .item article {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.39), rgb(0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.39),
+    rgb(0, 0, 0)
+  );
   padding: 0.5em 0.62em;
   color: var(--light);
 }
@@ -339,7 +373,7 @@ form {
     display: none;
   }
 
-  .banner h2{
+  .banner h2 {
     display: none;
   }
 }
@@ -369,7 +403,14 @@ form {
     display: none;
   }
 
-  .banner h2{
+  .banner h2 {
     display: none;
   }
 }
+.profile:hover {
+  transform: scale(1);
+}
+
+
+
+
