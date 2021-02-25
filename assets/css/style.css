@@ -340,7 +340,7 @@ form {
   }
 
   .banner h2{
-    display: flex;
+    display: none;
   }
 }
 
@@ -370,6 +370,6 @@ form {
   }
 
   .banner h2{
-    display: flex;
+    display: none;
   }
 }
